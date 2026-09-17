@@ -39,3 +39,7 @@ I designed Lacia primarily as a monolith, but I kept it decoupled and stateless.
 #### &lt;STANDALONE&gt;
 
 Lacia has no external service dependencies other than the database itself. It is designed to keep running even if the database becomes temporarily unavailable. Instead of exiting, it will continue serving requests and attempt to re-establish database connections as needed. This avoids the annoyance of manually restarting a container just because Postgres was in a bad mood for a couple of seconds.
+
+#### &lt;MINIMALISTIC&gt;
+
+At its core, Lacia uses Postgres as its sole source of truth. Additional components are avoided unless absolutely necessary, since they add operational complexity and can introduce data desynchronization or distributed race conditions.
