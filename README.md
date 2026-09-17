@@ -43,3 +43,7 @@ Lacia has no external service dependencies other than the database itself. It is
 #### &lt;MINIMALISTIC&gt;
 
 At its core, Lacia uses Postgres as its sole source of truth. Additional components are avoided unless absolutely necessary, since they add operational complexity and can introduce data desynchronization or distributed race conditions.
+
+## Mechanism
+
+TODO
