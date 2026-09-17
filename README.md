@@ -28,7 +28,7 @@ The drawback is that it's kinda tiring to write since you're basically building 
 
 **DISCLAIMER**: Like I said in the beginning, this is just personal documentation, and web development wasn't exactly my strong suit. So, if you have a better perspective or ideas that could help improve it, simply reach out to me. I'm happy to learn from you.
 
-#### <BLACK MONOLITH>
+#### &lt;BLACK MONOLITH&gt;
 
 Ever heard that a monolith is bad and that you need to design a microservice architecture so your system can scale?
 
