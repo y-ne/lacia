@@ -4,7 +4,9 @@
 
 ## Introduction
 
-`Lacia`, based on the same name, is a documented recreation of `Yy`’s old design, which originally served as the skeleton for his other creation.
+**Lacia**, based on the same name, is a personal documented recreation of `Yy`’s old design, which originally served as the skeleton for his other creation.
+
+The old Lacia was written in `Go`, and I will try to rewrite it in `Rust`.
 
 I’ll potentially explain it in a single `README` or split it across multiple files. We’ll see.
 
@@ -21,3 +23,15 @@ Q?: Yes, I used a library for routing because, if I'm not mistaken, the standard
 I used this architecture for several years, and it felt fantastic. The performance satisfied my needs, with low resource usage while maintaining high throughput. Since this architecture is basically just the language's standard library and a database driver, it gave me much more control and allowed me to mix and match whatever tools I needed.
 
 The drawback is that it's kinda tiring to write since you're basically building everything from scratch. But hey, for me, it was a price worth paying for having more control over what I was doing, so I didn't care.
+
+## Concept
+
+**DISCLAIMER**: Like I said in the beginning, this is just personal documentation, and web development wasn't exactly my strong suit. So, if you have a better perspective or ideas that could help improve it, simply reach out to me. I'm happy to learn from you.
+
+#### <BLACK MONOLITH>
+
+Ever heard that a monolith is bad and that you need to design a microservice architecture so your system can scale?
+
+In my opinion, most of the time, a monolith is more than enough. Rather than running multiple services built with resource hungry languages or frameworks, why not just build one that achieves the same thing while consuming far fewer resources?
+
+I designed Lacia primarily as a monolith, but I kept it decoupled and stateless. So, if you want to deploy it as a cluster and distribute the load across multiple nodes, you can. But in many cases, it does not really matter. You may end up hitting the limits of your load balancer or other infrastructure before you actually need to scale Lacia itself.
